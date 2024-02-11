@@ -16,6 +16,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
 }
 .container {
   height: 100vh;
@@ -30,6 +31,7 @@ body{
   position: relative;
   width: 800px;
   height: 400px;
+ 
 }
 .envelope-wrapper > .envelope::before {
   content: "";
@@ -41,6 +43,12 @@ body{
   border-left: 400px solid transparent;
   transform-origin: top;
   transition: all 0.5s ease-in-out;
+
+  // @media screen and (max-width: 800px) {
+  //   border-top: 300px solid var(--envelope-tab);
+  //   border-right: 200px solid transparent;
+  //   border-left: 200px solid transparent;
+  // }
 }
 .envelope-wrapper > .envelope::after {
   content: "";
@@ -120,3 +128,5 @@ a{
     text-decoration: none;
     color: blue;
 }
+
+
